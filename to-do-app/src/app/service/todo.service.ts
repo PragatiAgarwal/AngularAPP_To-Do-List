@@ -63,6 +63,7 @@ export class TodoService {
      const todoIndex = this.todos.findIndex(
        (currentObj) => currentObj.id === todo.id
      )
+     this.todos.splice(todoIndex, 1);
    }
 
 }
